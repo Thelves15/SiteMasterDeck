@@ -53,8 +53,7 @@ masterdeck/
 ├── index.html
 ├── style.css
 ├── scripts.js
-├── assets/
-│ ├── imagens/
+├── img
 ---
 
 ## 👨‍💻 Desenvolvedor
