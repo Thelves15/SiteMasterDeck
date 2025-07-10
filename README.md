@@ -59,10 +59,10 @@ masterdeck/
 
 ## 👨‍💻 Desenvolvedor
 
-Feito com 💙 por **Thelves Andrade Rocha**
+Feito com 💙 por **Thelves Andrade**
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/thelves-andrade)
-- 💼 Portfólio em breve!
+- 💼 Portfólio: https://theldev.netlify.app/!
 
 ---
 
