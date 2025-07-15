@@ -1,8 +1,8 @@
-// Aguarda o DOM estar completamente carregado
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log("MasterDeck website iniciado!")
 
-  // DOM Elements
+
   const navToggle = document.getElementById("navToggle")
   const navMenu = document.getElementById("navMenu")
   const navLinks = document.querySelectorAll(".nav-link")
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header")
   const scrollIndicator = document.querySelector(".scroll-indicator")
 
-  // Mobile Navigation
+  
   if (navToggle && navMenu) {
     console.log("Configurando navegação mobile...")
 
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("Menu toggled:", navMenu.classList.contains("active"))
     })
 
-    // Close mobile menu when clicking on a link
+    
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
         navMenu.classList.remove("active")
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
 
-    // Close mobile menu when clicking outside
+    
     document.addEventListener("click", (e) => {
       if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
         navMenu.classList.remove("active")
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  // FAQ Functionality
+
   console.log("Configurando FAQ...")
   faqItems.forEach((item) => {
     const question = item.querySelector(".faq-question")
@@ -59,12 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
         const isActive = item.classList.contains("active")
         console.log("FAQ clicado, ativo:", isActive)
 
-        // Close all FAQ items
+        
         faqItems.forEach((faqItem) => {
           faqItem.classList.remove("active")
         })
 
-        // Open clicked item if it wasn't active
+        
         if (!isActive) {
           item.classList.add("active")
           console.log("FAQ aberto")
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-  // Carousel Functionality
+  
   if (carouselTrack && carouselDots) {
     console.log("Configurando carrossel...")
 
@@ -82,8 +82,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalSlides = slides.length
     let autoPlayInterval
 
-    // Create dots
-    carouselDots.innerHTML = "" // Limpa dots existentes
+    
+    carouselDots.innerHTML = "" 
     for (let i = 0; i < totalSlides; i++) {
       const dot = document.createElement("div")
       dot.classList.add("carousel-dot")
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const translateX = -currentSlide * 100
       carouselTrack.style.transform = `translateX(${translateX}%)`
 
-      // Update dots
+      
       dots.forEach((dot, index) => {
         dot.classList.toggle("active", index === currentSlide)
       })
@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function startAutoPlay() {
-      autoPlayInterval = setInterval(nextSlide, 4000) // Muda a cada 4 segundos
+      autoPlayInterval = setInterval(nextSlide, 4000) 
       console.log("Auto-play iniciado")
     }
 
@@ -134,12 +134,12 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("Auto-play parado")
     }
 
-    // Event listeners para botões
+    
     if (nextBtn) {
       nextBtn.addEventListener("click", () => {
         nextSlide()
         stopAutoPlay()
-        setTimeout(startAutoPlay, 8000) // Reinicia após 8 segundos
+        setTimeout(startAutoPlay, 8000) 
       })
     }
 
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     }
 
-    // Touch support para mobile
+    
     let startX = 0
     let endX = 0
 
@@ -175,18 +175,18 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(startAutoPlay, 5000)
     })
 
-    // Pausa auto-play quando mouse está sobre o carrossel
+    
     const carousel = document.querySelector(".gallery-carousel")
     if (carousel) {
       carousel.addEventListener("mouseenter", stopAutoPlay)
       carousel.addEventListener("mouseleave", startAutoPlay)
     }
 
-    // Inicia o auto-play
+    
     startAutoPlay()
   }
 
-  // Contact Form
+  
   if (contactForm) {
     console.log("Configurando formulário...")
 
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const phone = formData.get("phone")
       const email = formData.get("email")
 
-      // Simula envio
+  
       const submitBtn = contactForm.querySelector('button[type="submit"]')
       const originalText = submitBtn.innerHTML
 
@@ -216,8 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }, 2000)
     })
   }
-
-  // Smooth scrolling para links âncora
+ 
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault()
@@ -235,7 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Scroll indicator
+  
   if (scrollIndicator) {
     scrollIndicator.addEventListener("click", () => {
       const benefitsSection = document.querySelector("#benefits")
@@ -245,7 +244,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  // Header background on scroll
+
   if (header) {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
@@ -261,7 +260,7 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log("Todas as funcionalidades carregadas com sucesso!")
 })
 
-// Previne erros de runtime
+
 window.addEventListener("error", (e) => {
   console.log("Erro capturado:", e.message)
 })

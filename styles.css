@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Variables */
+
 :root {
   --primary-color: #8b4513;
   --secondary-color: #d4af37;
@@ -36,14 +36,14 @@ body {
   --gradient-strong: linear-gradient(135deg, rgba(139, 69, 19, 0.2) 0%, rgba(212, 175, 55, 0.3) 100%);
 }
 
-/* Container */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Typography */
+
 .section-tag {
   display: inline-block;
   background: var(--gradient-primary);
@@ -83,7 +83,7 @@ body {
   background-clip: text;
 }
 
-/* Buttons */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -122,7 +122,7 @@ body {
   transform: translateY(-2px);
 }
 
-/* Header */
+
 .header {
   position: fixed;
   top: 0;
@@ -192,7 +192,7 @@ body {
   border-radius: 2px;
 }
 
-/* Hero Section */
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -344,7 +344,6 @@ body {
   }
 }
 
-/* Benefits Section */
 .benefits {
   padding: 6rem 0;
   background: #ffffff;
@@ -507,7 +506,7 @@ body {
   line-height: 1.6;
 }
 
-/* Gallery Section */
+
 .gallery {
   padding: 6rem 0;
   background: #f8f9fa;
@@ -680,7 +679,7 @@ body {
   background: var(--primary-color);
 }
 
-/* About Section */
+
 .about {
   padding: 6rem 0;
   background: #ffffff;
@@ -739,7 +738,7 @@ body {
   box-shadow: var(--shadow);
 }
 
-/* Testimonials Section */
+
 .testimonials {
   padding: 6rem 0;
   background: #f8f9fa;
@@ -824,7 +823,6 @@ body {
   font-size: 0.9rem;
 }
 
-/* FAQ Section */
 .faq {
   padding: 6rem 0;
   background: #ffffff;
@@ -890,7 +888,7 @@ body {
   line-height: 1.6;
 }
 
-/* Contact Section */
+
 .contact {
   padding: 6rem 0;
   background: #f8f9fa;
@@ -1004,7 +1002,7 @@ body {
   border-color: var(--primary-color);
 }
 
-/* Footer */
+
 .footer {
   background: var(--dark-gray);
   color: var(--white);
@@ -1094,7 +1092,7 @@ body {
   color: #ccc;
 }
 
-/* WhatsApp Float Button */
+
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -1131,7 +1129,7 @@ body {
   }
 }
 
-/* Scroll Reveal Animations */
+
 .scroll-reveal {
   opacity: 0;
   transform: translateY(50px);
@@ -1165,7 +1163,7 @@ body {
   transform: translateX(0);
 }
 
-/* Efeitos visuais mais intensos */
+
 .testimonial-card::before {
   content: "";
   position: absolute;
@@ -1204,7 +1202,7 @@ body {
   opacity: 0.2;
 }
 
-/* Mobile Navigation - CORRIGIDO E MELHORADO */
+
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
@@ -1363,7 +1361,7 @@ body {
     transform: translateX(4px) scale(0.98);
   }
 
-  /* Overlay para fechar menu */
+  
   .nav-menu.active::after {
     content: "";
     position: fixed;
@@ -1376,7 +1374,7 @@ body {
   }
 }
 
-/* Efeitos gerais de modernização */
+
 .section-header {
   position: relative;
 }
@@ -1419,7 +1417,6 @@ body {
   opacity: 0.1;
 }
 
-/* Animações de entrada */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1447,7 +1444,7 @@ body {
   animation-delay: 0.3s;
 }
 
-/* Mobile adjustments */
+
 @media (max-width: 768px) {
   .hero-buttons {
     flex-direction: column;
@@ -1482,7 +1479,7 @@ body {
   }
 }
 
-/* Tablet Styles */
+
 @media (min-width: 768px) {
   .hero-content {
     grid-template-columns: 1fr 1fr;
@@ -1524,7 +1521,7 @@ body {
   }
 }
 
-/* Desktop Styles */
+
 @media (min-width: 1024px) {
   .benefits-grid {
     grid-template-columns: repeat(4, 1fr);

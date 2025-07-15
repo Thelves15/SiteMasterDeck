@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <nav class="nav">
             <div class="nav-container">
@@ -35,7 +34,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-background"></div>
         <div class="container">
@@ -64,7 +62,6 @@
         </div>
     </section>
 
-    <!-- Benefits Section -->
     <section id="benefits" class="benefits">
         <div class="container">
             <div class="section-header scroll-reveal">
@@ -105,7 +102,6 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
     <section id="gallery" class="gallery">
         <div class="container">
             <div class="section-header">
@@ -150,7 +146,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
@@ -181,7 +176,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
         <div class="container">
             <div class="section-header">
@@ -245,7 +239,6 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section id="faq" class="faq">
         <div class="container">
             <div class="section-header">
@@ -303,7 +296,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
@@ -367,7 +359,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -414,17 +405,16 @@
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
     <a href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre as capas MasterDeck." class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <script>
-// Aguarda o DOM estar completamente carregado
+
 document.addEventListener('DOMContentLoaded', function() {
     console.log('MasterDeck website iniciado!');
     
-    // DOM Elements
+    
     const navToggle = document.getElementById("navToggle");
     const navMenu = document.getElementById("navMenu");
     const navLinks = document.querySelectorAll(".nav-link");
@@ -437,7 +427,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector(".header");
     const scrollIndicator = document.querySelector(".scroll-indicator");
 
-    // Mobile Navigation
     if (navToggle && navMenu) {
         console.log('Configurando navegação mobile...');
         
@@ -451,7 +440,6 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Menu toggled:', navMenu.classList.contains('active'));
         });
 
-        // Close mobile menu when clicking on a link
         navLinks.forEach(function(link) {
             link.addEventListener("click", function() {
                 navMenu.classList.remove("active");
@@ -460,7 +448,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
-        // Close mobile menu when clicking outside
         document.addEventListener("click", function(e) {
             if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
                 navMenu.classList.remove("active");
@@ -469,7 +456,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // FAQ Functionality
     console.log('Configurando FAQ...');
     faqItems.forEach(function(item) {
         const question = item.querySelector(".faq-question");
@@ -481,12 +467,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 const isActive = item.classList.contains("active");
                 console.log('FAQ clicado, ativo:', isActive);
 
-                // Close all FAQ items
+
                 faqItems.forEach(function(faqItem) {
                     faqItem.classList.remove("active");
                 });
 
-                // Open clicked item if it wasn't active
+                
                 if (!isActive) {
                     item.classList.add("active");
                     console.log('FAQ aberto');
@@ -495,7 +481,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Carousel Functionality - MELHORADO
     if (carouselTrack && carouselDots) {
         console.log('Configurando carrossel...');
         
@@ -503,10 +488,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const slides = document.querySelectorAll(".carousel-slide");
         const totalSlides = slides.length;
         let autoPlayInterval;
-        let isTransitioning = false; // Previne bugs de transição
+        let isTransitioning = false; 
 
-        // Create dots
-        carouselDots.innerHTML = ''; // Limpa dots existentes
+        
+        carouselDots.innerHTML = ''; 
         for (let i = 0; i < totalSlides; i++) {
             const dot = document.createElement("div");
             dot.classList.add("carousel-dot");
@@ -523,21 +508,21 @@ document.addEventListener('DOMContentLoaded', function() {
         const dots = document.querySelectorAll(".carousel-dot");
 
         function updateCarousel() {
-            if (isTransitioning) return; // Previne múltiplas transições
+            if (isTransitioning) return; 
             
             isTransitioning = true;
             const translateX = -currentSlide * 100;
             carouselTrack.style.transform = `translateX(${translateX}%)`;
 
-            // Update dots
+        
             dots.forEach(function(dot, index) {
                 dot.classList.toggle("active", index === currentSlide);
             });
 
-            // Reset transition flag após a transição
+            
             setTimeout(function() {
                 isTransitioning = false;
-            }, 500); // Tempo da transição CSS
+            }, 500); 
         }
 
         function nextSlide() {
@@ -562,12 +547,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         function startAutoPlay() {
-            stopAutoPlay(); // Garante que não há múltiplos intervalos
+            stopAutoPlay(); 
             autoPlayInterval = setInterval(function() {
                 if (!isTransitioning) {
                     nextSlide();
                 }
-            }, 6000); // 6 segundos por slide
+            }, 6000); 
             console.log('Auto-play iniciado (6s por slide)');
         }
 
@@ -581,10 +566,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function resetAutoPlay() {
             stopAutoPlay();
-            setTimeout(startAutoPlay, 10000); // Reinicia após 10 segundos de inatividade
+            setTimeout(startAutoPlay, 10000); 
         }
 
-        // Event listeners para botões
+        
         if (nextBtn) {
             nextBtn.addEventListener("click", function() {
                 if (!isTransitioning) {
@@ -603,7 +588,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
-        // Touch support para mobile - MELHORADO
+        
         let startX = 0;
         let endX = 0;
         let startY = 0;
@@ -625,7 +610,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const diffX = Math.abs(currentX - startX);
             const diffY = Math.abs(currentY - startY);
             
-            // Se o movimento é mais horizontal que vertical, previne scroll vertical
+            
             if (diffX > diffY) {
                 e.preventDefault();
             }
@@ -641,7 +626,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const diffY = Math.abs(startY - endY);
             const threshold = 50;
 
-            // Só executa swipe se o movimento foi mais horizontal que vertical
+            
             if (Math.abs(diffX) > threshold && diffY < 100) {
                 if (diffX > 0) {
                     nextSlide();
@@ -654,14 +639,14 @@ document.addEventListener('DOMContentLoaded', function() {
             resetAutoPlay();
         }, { passive: true });
 
-        // Pausa auto-play quando mouse está sobre o carrossel
+        
         const carousel = document.querySelector(".gallery-carousel");
         if (carousel) {
             carousel.addEventListener("mouseenter", stopAutoPlay);
             carousel.addEventListener("mouseleave", startAutoPlay);
         }
 
-        // Pausa auto-play quando a aba não está visível
+        
         document.addEventListener("visibilitychange", function() {
             if (document.hidden) {
                 stopAutoPlay();
@@ -670,11 +655,11 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Inicia o auto-play
+        
         startAutoPlay();
     }
 
-    // Contact Form - ATUALIZADO PARA WHATSAPP
+    
     if (contactForm) {
         console.log('Configurando formulário...');
         
@@ -687,22 +672,22 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = formData.get("email");
             const message = formData.get("message");
 
-            // Validação básica
+            
             if (!name || !phone || !email || !message) {
                 alert('Por favor, preencha todos os campos obrigatórios.');
                 return;
             }
 
-            // Simula loading
+            
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparando...';
             submitBtn.disabled = true;
 
-            // Prepara mensagem para WhatsApp
+            
             setTimeout(function() {
-                const whatsappNumber = "5599999999999"; // Número fictício
+                const whatsappNumber = "5599999999999"; 
                 
                 const whatsappMessage = `Olá! Gostaria de solicitar um orçamento.
 
@@ -717,21 +702,21 @@ ${message}
 ---
 _Enviado através do site MasterDeck_`;
 
-                // Codifica a mensagem para URL
+                
                 const encodedMessage = encodeURIComponent(whatsappMessage);
                 
-                // Cria URL do WhatsApp
+                
                 const whatsappURL = `https://wa.me/${98970005227}?text=${encodedMessage}`;
                 
-                // Abre WhatsApp
+                
                 window.open(whatsappURL, '_blank');
                 
-                // Reset do formulário
+                
                 contactForm.reset();
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
                 
-                // Mensagem de confirmação
+                
                 setTimeout(function() {
                     alert('Redirecionando para o WhatsApp! Se não abriu automaticamente, verifique se o popup foi bloqueado.');
                 }, 500);
@@ -740,7 +725,7 @@ _Enviado através do site MasterDeck_`;
         });
     }
 
-    // Smooth scrolling para links âncora
+    
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener("click", function(e) {
             e.preventDefault();
@@ -758,7 +743,7 @@ _Enviado através do site MasterDeck_`;
         });
     });
 
-    // Scroll indicator
+    
     if (scrollIndicator) {
         scrollIndicator.addEventListener("click", function() {
             const benefitsSection = document.querySelector("#benefits");
@@ -768,7 +753,7 @@ _Enviado através do site MasterDeck_`;
         });
     }
 
-    // Header background on scroll
+    
     if (header) {
         window.addEventListener("scroll", function() {
             if (window.scrollY > 100) {
@@ -781,7 +766,7 @@ _Enviado através do site MasterDeck_`;
         });
     }
 
-    // Scroll Reveal Animation
+
     function initScrollReveal() {
         const revealElements = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right');
         
@@ -801,13 +786,13 @@ _Enviado através do site MasterDeck_`;
         });
     }
 
-    // Inicializa scroll reveal
+
     initScrollReveal();
 
     console.log('Todas as funcionalidades carregadas com sucesso!');
 });
 
-// Previne erros de runtime
+
 window.addEventListener('error', function(e) {
     console.log('Erro capturado:', e.message);
 });
