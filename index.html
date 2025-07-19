@@ -25,6 +25,7 @@
                     <li><a href="#home" class="nav-link">Início</a></li>
                     <li><a href="#benefits" class="nav-link">Benefícios</a></li>
                     <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                    <li><a href="#installation" class="nav-link">Instalação</a></li>
                     <li><a href="#about" class="nav-link">Sobre</a></li>
                     <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
                     <li><a href="#faq" class="nav-link">FAQ</a></li>
@@ -53,7 +54,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="/img/Captura de tela 2025-07-07 171005.png" alt="Piscina com capa MasterDeck">
+                    <img src="img/Captura de tela 2025-07-07 171005.png" alt="Piscina com capa MasterDeck">
                 </div>
             </div>
         </div>
@@ -113,21 +114,21 @@
                 <div class="carousel-container">
                     <div class="carousel-track" id="carouselTrack">
                         <div class="carousel-slide">
-                            <img src="/img/Captura de tela 2025-07-07 170643.png" alt="Piscina com capa automática">
+                            <img src="img/Captura de tela 2025-07-07 170643.png" alt="Piscina com capa automática">
                             <div class="slide-overlay">
                                 <h4>Capa Automática Premium</h4>
                                 <p>Sistema automatizado com controle remoto</p>
                             </div>
                         </div>
                         <div class="carousel-slide">
-                            <img src="/img/Captura de tela 2025-07-07 170734.png" alt="Deck de madeira com piscina">
+                            <img src="img/Captura de tela 2025-07-07 170734.png" alt="Deck de madeira com piscina">
                             <div class="slide-overlay">
                                 <h4>Deck Integrado</h4>
                                 <p>Madeira premium com acabamento especial</p>
                             </div>
                         </div>
                         <div class="carousel-slide">
-                            <img src="/img/Captura de tela 2025-07-07 170923 - Copia.png" alt="Piscina moderna">
+                            <img src="img/Captura de tela 2025-07-07 171035.png" alt="Piscina moderna">
                             <div class="slide-overlay">
                                 <h4>Design Moderno</h4>
                                 <p>Linhas clean e elegantes</p>
@@ -142,6 +143,43 @@
                     <i class="fas fa-chevron-right"></i>
                 </button>
                 <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="installation" class="installation">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Instalação</span>
+                <h2 class="section-title">Veja como é <span class="gradient-text">simples</span></h2>
+                <p class="section-subtitle">Acompanhe o processo completo de instalação das nossas capas premium</p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/watch?v=H9W4em-U2Vc" 
+                        title="Instalação MasterDeck - Processo Completo"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <div class="video-stats">
+                        <div class="video-stat">
+                            <i class="fas fa-clock"></i>
+                            <span>Instalação em 1 dia</span>
+                        </div>
+                        <div class="video-stat">
+                            <i class="fas fa-tools"></i>
+                            <span>Equipe especializada</span>
+                        </div>
+                        <div class="video-stat">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Garantia total</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -170,7 +208,7 @@
                     </div>
                 </div>
                 <div class="about-image scroll-reveal-right">
-                    <img src="/img/Captura de tela 2025-07-07 171208.png" alt="Equipe MasterDeck">
+                    <img src="img/Captura de tela 2025-07-07 171208.png" alt="Equipe MasterDeck">
                 </div>
             </div>
         </div>
@@ -427,6 +465,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector(".header");
     const scrollIndicator = document.querySelector(".scroll-indicator");
 
+    
     if (navToggle && navMenu) {
         console.log('Configurando navegação mobile...');
         
@@ -440,6 +479,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Menu toggled:', navMenu.classList.contains('active'));
         });
 
+        
         navLinks.forEach(function(link) {
             link.addEventListener("click", function() {
                 navMenu.classList.remove("active");
@@ -448,6 +488,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
 
+        
         document.addEventListener("click", function(e) {
             if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
                 navMenu.classList.remove("active");
@@ -455,6 +496,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
 
     console.log('Configurando FAQ...');
     faqItems.forEach(function(item) {
@@ -467,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const isActive = item.classList.contains("active");
                 console.log('FAQ clicado, ativo:', isActive);
 
-
+                
                 faqItems.forEach(function(faqItem) {
                     faqItem.classList.remove("active");
                 });
@@ -481,6 +523,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    
     if (carouselTrack && carouselDots) {
         console.log('Configurando carrossel...');
         
@@ -566,7 +609,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function resetAutoPlay() {
             stopAutoPlay();
-            setTimeout(startAutoPlay, 10000); 
+            setTimeout(startAutoPlay, 10000);
         }
 
         
@@ -654,12 +697,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 startAutoPlay();
             }
         });
-
         
         startAutoPlay();
     }
 
-    
     if (contactForm) {
         console.log('Configurando formulário...');
         
@@ -672,31 +713,28 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = formData.get("email");
             const message = formData.get("message");
 
-            
             if (!name || !phone || !email || !message) {
                 alert('Por favor, preencha todos os campos obrigatórios.');
                 return;
             }
 
-            
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerHTML;
             
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparando...';
             submitBtn.disabled = true;
 
-            
             setTimeout(function() {
                 const whatsappNumber = "5599999999999"; 
                 
                 const whatsappMessage = `Olá! Gostaria de solicitar um orçamento.
 
- *DADOS DO CLIENTE:*
- *Nome:* ${name}
- *Telefone:* ${phone}
- *E-mail:* ${email}
+📋 *DADOS DO CLIENTE:*
+👤 *Nome:* ${name}
+📞 *Telefone:* ${phone}
+📧 *E-mail:* ${email}
 
- *Mensagem:*
+💬 *Mensagem:*
 ${message}
 
 ---
@@ -705,17 +743,13 @@ _Enviado através do site MasterDeck_`;
                 
                 const encodedMessage = encodeURIComponent(whatsappMessage);
                 
-                
-                const whatsappURL = `https://wa.me/${98970005227}?text=${encodedMessage}`;
-                
+                const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
                 
                 window.open(whatsappURL, '_blank');
-                
                 
                 contactForm.reset();
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
-                
                 
                 setTimeout(function() {
                     alert('Redirecionando para o WhatsApp! Se não abriu automaticamente, verifique se o popup foi bloqueado.');
@@ -725,7 +759,6 @@ _Enviado através do site MasterDeck_`;
         });
     }
 
-    
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
         anchor.addEventListener("click", function(e) {
             e.preventDefault();
@@ -743,7 +776,6 @@ _Enviado através do site MasterDeck_`;
         });
     });
 
-    
     if (scrollIndicator) {
         scrollIndicator.addEventListener("click", function() {
             const benefitsSection = document.querySelector("#benefits");
@@ -753,7 +785,6 @@ _Enviado através do site MasterDeck_`;
         });
     }
 
-    
     if (header) {
         window.addEventListener("scroll", function() {
             if (window.scrollY > 100) {
@@ -765,7 +796,6 @@ _Enviado através do site MasterDeck_`;
             }
         });
     }
-
 
     function initScrollReveal() {
         const revealElements = document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right');
@@ -786,12 +816,10 @@ _Enviado através do site MasterDeck_`;
         });
     }
 
-
     initScrollReveal();
 
     console.log('Todas as funcionalidades carregadas com sucesso!');
 });
-
 
 window.addEventListener('error', function(e) {
     console.log('Erro capturado:', e.message);
