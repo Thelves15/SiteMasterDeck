@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /* Reset */
+=======
+
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +20,10 @@ body {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 /* Variables */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 :root {
   --primary-color: #8b4513;
   --secondary-color: #d4af37;
@@ -36,14 +43,20 @@ body {
   --gradient-strong: linear-gradient(135deg, rgba(139, 69, 19, 0.2) 0%, rgba(212, 175, 55, 0.3) 100%);
 }
 
+<<<<<<< HEAD
 /* Container */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+<<<<<<< HEAD
 /* Typography */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .section-tag {
   display: inline-block;
   background: var(--gradient-primary);
@@ -83,7 +96,10 @@ body {
   background-clip: text;
 }
 
+<<<<<<< HEAD
 /* Buttons */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .btn {
   display: inline-flex;
   align-items: center;
@@ -122,7 +138,10 @@ body {
   transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
 /* Header */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .header {
   position: fixed;
   top: 0;
@@ -192,7 +211,10 @@ body {
   border-radius: 2px;
 }
 
+<<<<<<< HEAD
 /* Hero Section */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .hero {
   min-height: 100vh;
   display: flex;
@@ -344,7 +366,10 @@ body {
   }
 }
 
+<<<<<<< HEAD
 /* Benefits Section */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .benefits {
   padding: 6rem 0;
   background: #ffffff;
@@ -352,6 +377,10 @@ body {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .benefits .container {
   position: relative;
   z-index: 2;
@@ -483,7 +512,10 @@ body {
   line-height: 1.6;
 }
 
+<<<<<<< HEAD
 /* Gallery Section */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .gallery {
   padding: 6rem 0;
   background: #f8f9fa;
@@ -656,7 +688,10 @@ body {
   background: var(--primary-color);
 }
 
+<<<<<<< HEAD
 /* Installation Video Section */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .installation {
   padding: 6rem 0;
   background: #ffffff;
@@ -664,6 +699,7 @@ body {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
 .installation::before {
   content: "";
   position: absolute;
@@ -691,6 +727,9 @@ body {
   z-index: 1;
   animation: float 10s ease-in-out infinite reverse;
 }
+=======
+
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 
 .installation .container {
   position: relative;
@@ -712,9 +751,12 @@ body {
   overflow: hidden;
   box-shadow: var(--shadow-strong);
   background: #000;
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 }
 
 .video-wrapper::before {
@@ -732,7 +774,11 @@ body {
   animation: pulse-glow 4s ease-in-out infinite;
 }
 
+<<<<<<< HEAD
 .video-wrapper video {
+=======
+.video-wrapper iframe {
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
   position: absolute;
   top: 0;
   left: 0;
@@ -740,6 +786,7 @@ body {
   height: 100%;
   border: none;
   border-radius: var(--border-radius);
+<<<<<<< HEAD
   object-fit: contain; /* Mudança aqui - mantém proporção sem cortar */
   background: #000;
 }
@@ -751,6 +798,8 @@ body {
 
 .video-wrapper video.cover {
   object-fit: cover; /* Para casos onde quer preencher cortando proporcionalmente */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 }
 
 .video-info {
@@ -823,7 +872,10 @@ body {
   font-size: 1.1rem;
 }
 
+<<<<<<< HEAD
 /* Animações específicas para os stats */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .video-stat:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -836,7 +888,10 @@ body {
   animation-delay: 0.3s;
 }
 
+<<<<<<< HEAD
 /* Mobile adjustments para video */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 @media (max-width: 768px) {
   .video-stats {
     grid-template-columns: 1fr;
@@ -862,7 +917,10 @@ body {
   }
 }
 
+<<<<<<< HEAD
 /* About Section */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .about {
   padding: 6rem 0;
   background: #ffffff;
@@ -921,7 +979,10 @@ body {
   box-shadow: var(--shadow);
 }
 
+<<<<<<< HEAD
 /* Testimonials Section */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .testimonials {
   padding: 6rem 0;
   background: #f8f9fa;
@@ -1006,7 +1067,10 @@ body {
   font-size: 0.9rem;
 }
 
+<<<<<<< HEAD
 /* FAQ Section */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .faq {
   padding: 6rem 0;
   background: #ffffff;
@@ -1072,7 +1136,10 @@ body {
   line-height: 1.6;
 }
 
+<<<<<<< HEAD
 /* Contact Section */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .contact {
   padding: 6rem 0;
   background: #f8f9fa;
@@ -1186,7 +1253,10 @@ body {
   border-color: var(--primary-color);
 }
 
+<<<<<<< HEAD
 /* Footer */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .footer {
   background: var(--dark-gray);
   color: var(--white);
@@ -1276,7 +1346,10 @@ body {
   color: #ccc;
 }
 
+<<<<<<< HEAD
 /* WhatsApp Float Button */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -1313,7 +1386,10 @@ body {
   }
 }
 
+<<<<<<< HEAD
 /* Scroll Reveal Animations */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .scroll-reveal {
   opacity: 0;
   transform: translateY(50px);
@@ -1347,7 +1423,10 @@ body {
   transform: translateX(0);
 }
 
+<<<<<<< HEAD
 /* Efeitos visuais mais intensos */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .testimonial-card::before {
   content: "";
   position: absolute;
@@ -1386,7 +1465,10 @@ body {
   opacity: 0.2;
 }
 
+<<<<<<< HEAD
 /* Mobile Navigation - CORRIGIDO E MELHORADO */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 @media (max-width: 768px) {
   .nav-toggle {
     display: flex;
@@ -1545,7 +1627,10 @@ body {
     transform: translateX(4px) scale(0.98);
   }
 
+<<<<<<< HEAD
   /* Overlay para fechar menu */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
   .nav-menu.active::after {
     content: "";
     position: fixed;
@@ -1558,7 +1643,10 @@ body {
   }
 }
 
+<<<<<<< HEAD
 /* Efeitos gerais de modernização */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 .section-header {
   position: relative;
 }
@@ -1601,7 +1689,10 @@ body {
   opacity: 0.1;
 }
 
+<<<<<<< HEAD
 /* Animações de entrada */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1629,7 +1720,10 @@ body {
   animation-delay: 0.3s;
 }
 
+<<<<<<< HEAD
 /* Mobile adjustments */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 @media (max-width: 768px) {
   .hero-buttons {
     flex-direction: column;
@@ -1664,7 +1758,10 @@ body {
   }
 }
 
+<<<<<<< HEAD
 /* Tablet Styles */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 @media (min-width: 768px) {
   .hero-content {
     grid-template-columns: 1fr 1fr;
@@ -1706,7 +1803,10 @@ body {
   }
 }
 
+<<<<<<< HEAD
 /* Desktop Styles */
+=======
+>>>>>>> 745bc4fcfc7aa6a2f5e4c8f50e757184335d28df
 @media (min-width: 1024px) {
   .benefits-grid {
     grid-template-columns: repeat(4, 1fr);
