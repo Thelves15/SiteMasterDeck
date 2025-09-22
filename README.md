@@ -4,7 +4,7 @@ Bem-vindo ao repositório do projeto **MasterDeck**, um site moderno e responsiv
 
 ## 🖥️ Link do Projeto
 
-👉 Acesse aqui: [sitemasterdeck.netlify.app](https://sitemasterdeck.netlify.app/)
+👉 Acesse aqui: [sitemasterdeck.netlify.app](https://masterdecks.site/)
 
 ---
 
